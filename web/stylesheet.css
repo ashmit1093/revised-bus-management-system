@@ -2,15 +2,33 @@
   margin:0;
   outline:none;
 }
-.body{
-  
+body{
+  font-family: 'Font Awesome 5 Free','Quicksand', sans-serif;
+  overflow: hidden;
 }
 .header{
   background-color:black; 
   width:100%;
   height: 50px;
+  overflow: hidden;
+
+
 }
 
+.header h3{
+  color:white;
+  position: relative;
+  top:-20px;
+  left:70px;  
+}
+
+.fa-bus
+{
+  color: red;
+  position: relative; 
+  top:10px;
+  left:30px;
+}
 
 
 
@@ -18,26 +36,30 @@
   
   
   position: relative;
-  background:url(images.jpeg);    
+  /*background:url(images.jpeg); */
+  background:#212121;  
   background-size:cover; 
   background-repeat: no-repeat;
   background-position: center;
   height: 88vh;
+  overflow: hidden;
+  opacity: 1;
+  
 }
 
 
 .signup-box{
 
   width: 380px;
-  height: 514px;
+  height: 512px;
   background: black ;
   position: absolute;
-  top:15%;
+  top:17%;
   left:35%;
   text-align: center;
-  opacity: 0.9;
-  border-radius:15px 50px 30px;
-  box-shadow: 0px 0px 8px white; 
+  opacity: 0.85;
+  border-radius:15px 50px 30px;         
+  box-shadow: 0px 0px 1px red; 
   box-sizing: border-box;
   padding: 20px;
    
@@ -50,7 +72,7 @@
   font-size: 18px;
   padding-left: 35px;
   padding-bottom: 15px;
-  font-family: 'Quicksand', sans-serif;
+  
 
 
 }
@@ -67,7 +89,16 @@
   text-decoration: none;
   font-size:15px; 
   font-weight: bold;
-  font-family: 'Quicksand', sans-serif;
+  font-family: 'Font Awesome 5 Free','Quicksand', sans-serif;
+  
+
+}
+
+.signup-box input:focus{
+    
+  border-bottom: 1px solid red;
+  transform: translate(0px,-1px);
+  font-family: 'Font Awesome 5 Free','Quicksand', sans-serif;
 
 }
 
@@ -85,21 +116,17 @@
   font-weight: bold;
   -webkit-appearance: none;
   -webkit-border-radius: 0px; 
-  font-family: 'Quicksand', sans-serif;
+  font-family: 'Font Awesome 5 Free','Quicksand', sans-serif;
+
 
 }
 .signup-box select:focus{
   border-bottom: 1px solid red; 
-  font-family: 'Quicksand', sans-serif;
   color: white;
+  font-family: 'Font Awesome 5 Free','Quicksand', sans-serif;
 }
 
-.signup-box input:focus{
-    
-    border-bottom: 1px solid red;
-    transform: translate(0px,-1px);
-    font-family: 'Quicksand', sans-serif;
-}
+
 
 .btn{
   position: relative;
@@ -124,36 +151,46 @@
   transform: translate(0px,-2px);
   border: 1px solid black;
   font-size: 15px;
+  font-weight: bold;
+  font-family: 'Font Awesome 5 Free','Quicksand', sans-serif;
  }
 
 .signup-box h2{
   position: relative;
   color: #fff;
   font-size: 20px;
-  top:125px;
-  font-family: 'Quicksand', sans-serif;
+  top:115px;
+  font-family: 'Font Awesome 5 Free','Quicksand', sans-serif;
 }
 p {
-  position: relative;
+  position: relative; 
   top:135px;
   color: red;
   border: none;
   width: 90%;
   text-decoration: none;
-  font-size:18px; 
+  font-size:17px; 
   font-weight: bold;
-  font-family: 'Quicksand', sans-serif;
+  font-family: 'Font Awesome 5 Free','Quicksand', sans-serif; 
 }
 #demo1{
-    right:32px;
+  right:32px;
+  font-family: 'Font Awesome 5 Free','Quicksand', sans-serif;
+  padding-top:2px;  
+  
+   
 }
 
 #demo2
 {
-    right:5px;
+  right:5px;
+  font-family: 'Font Awesome 5 Free','Quicksand', sans-serif;
+  padding-top:2px;  
 }
 #demo3{
-    right:18px;
+  right:18px;
+  font-family: 'Font Awesome 5 Free','Quicksand', sans-serif;
+  padding-top:2px; 
 }
 
 .logo{
@@ -168,5 +205,6 @@ p {
 .footer{
   background-color:black; 
   width:100%;
-  height: 50px;
+  height: 180px;
+  overflow: hidden;
 }

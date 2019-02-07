@@ -2,36 +2,55 @@
 <html>
 
 <head>
-    <title>Bus Management Chitkara</title>
+    <title>Bus Management System : Login</title>
     <link rel="stylesheet" type="text/css" href="stylesheet.css">
     <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
+        crossorigin="anonymous">
+    <link rel="icon" href="bus.png" type="image/gif" sizes="16x16">
 </head>
 
 <body>
+
     <div class="main">
-        <div class="header"></div>
+
+        <div class="header">
+            <i class="fa fa-bus fa-2x"></i>
+            <h3>BUS MANAGEMENT</h3>
+        </div>
+
         <div class="content">
+
             <div class="signup-box">
 
                 <div class="logo"><img src="CU_logo.png"></div>
-                <h2>Sign-In Here</h2>
-                <form name ="myForm" method="post" action="LogServlet"onsubmit=" return myValidation()">
+                <h2>Sign-In Here
+                    <i class="far fa-user-circle fa-1x"></i>
+                </h2>
+
+                <form name="myForm" method="post" action="LogServlet" onsubmit=" return myValidation()">
+
                     <h4>Username</h4>
-                    <input type="text" name="id" placeholder="Username">
+                    <input type="text" name="id" placeholder='&#61447; Username' id="username">
+                
                     <p id="demo1"></p>
                     <h4 style="left:-150px">Role</h4>
-                    <select name="role">
-                        <option value="">-Select-</option>
+
+                    <select name="role" id="role">
+                        <option value=""> -Select-</option>
                         <option value="Student">Student</option>
                         <option value="Faculty">Faculty</option>
                         <option value="Admin">Admin</option>
                     </select>
                     <p id="demo2"></p>
+
                     <h4>Password</h4>
-                    <input type="password" name="pass" placeholder="Password">
+                    <input type="password" name="pass" placeholder="&#61475; Password" id="pwd">
                     <p id="demo3"></p>
+
                     </br>
-                    <button type="submit" class="btn" >Sign In</button>
+                    <button type="submit" class="btn">Sign In <i class="fas fa-sign-in-alt"></i></button>
+
                 </form>
             </div>
         </div>
@@ -40,49 +59,58 @@
     </div>
 
     <script>
-      function myValidation() {
-      var value1 = document.forms["myForm"]["id"].value;
-      console.log('value1: ', value1);
-      var value2 = document.forms["myForm"]["role"].value;
-      console.log('value2: ', value2);
-      var value3 = document.forms["myForm"]["pass"].value;
-      console.log('value3: ', value3);
-      var text;
-      var flag=true;
-      
-      if (value1 == "") {
-        text = "Name cannot be empty.";
-        flag=false;
         
-      }
-      else{
-        text = "";
-      }
-      document.getElementById("demo1").innerHTML = text;
+        function myValidation() {
+            var value1 = document.forms["myForm"]["id"].value;
+            console.log('value1: ', value1);
+            var value2 = document.forms["myForm"]["role"].value;
+            console.log('value2: ', value2);
+            var value3 = document.forms["myForm"]["pass"].value;
+            console.log('value3: ', value3);
+            var text;
+            var flag = true;
+            
 
-      if (value2 == "") {
-        text = "Please Select Appropriate Field.";
-         flag=false;
+            if (value1 == "") {
+                
+                text = "&#xf057; Name cannot be empty.";
+                flag = false;
+                document.getElementById("username").style.borderBottom = "thin solid red";
 
-      }
-      else{
-        text = "";
-      }
-      document.getElementById("demo2").innerHTML = text;
+            }
+            else {
+                text = "";
+                document.getElementById("username").style.borderBottom = "thin solid white";
+            }
+            document.getElementById("demo1").innerHTML = text;
+            
 
-      if (value3 == "") {
-        text = "Password cannot be empty.";
-         flag=false;
-        
-      }
-      else{
-        text="";
-      }
-      document.getElementById("demo3").innerHTML = text;
-      
-      return flag;
-      
-  }
+            if (value2 == "") {
+                text = "&#xf057; Please Select Appropriate Field.";
+                flag = false;
+                document.getElementById("role").style.borderBottom = "thin solid red";
+
+            }
+            else {
+                text = "";
+                document.getElementById("role").style.borderBottom = "thin solid white";
+            }
+            document.getElementById("demo2").innerHTML = text;
+
+            if (value3 == "") {
+                text = "&#xf057; Password cannot be empty.";
+                flag = false;
+                document.getElementById("pwd").style.borderBottom = "thin solid red";
+            }
+            else {
+                text = "";
+                document.getElementById("pwd").style.borderBottom = "thin solid white";
+            }
+            document.getElementById("demo3").innerHTML = text;
+
+            return flag;
+
+        }
 
     </script>
 </body>
