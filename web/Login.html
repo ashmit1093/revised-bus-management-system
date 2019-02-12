@@ -8,7 +8,9 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css"
         integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
     <link rel="icon" href="bus.png" type="image/gif" sizes="16x16">
+    <link rel="stylesheet" href="animate.css">
 </head>
+<script src="jquery-3.3.1.js"></script>
 
 <body>
 
@@ -19,7 +21,7 @@
             <h3>BUS MANAGEMENT</h3>
 
         </div>
-       
+
 
 
         <div class="content">
@@ -35,12 +37,11 @@
 
                     <h4>Username</h4>
                     <input type="text" name="id" placeholder='&#61447; Username' id="username">
-
                     <p id="demo1"></p>
-                    <h4 style="left:-150px">Role</h4>
 
-                    <select name="role" id="role">
-                        <option value=""> -Select-</option>
+                    <h4 style="left:-150px">Role</h4>
+                    <select name="role" id="role" >
+                        <option value=""> &#xf0d7;  -Select-</option>
                         <option value="Student">Student</option>
                         <option value="Faculty">Faculty</option>
                         <option value="Admin">Admin</option>
@@ -52,7 +53,7 @@
                     <p id="demo3"></p>
 
                     </br>
-                    <button type="submit" class="btn">Sign In <i class="fas fa-sign-in-alt"></i></button>
+                    <button type="submit" id="btn">Sign In <i class="fas fa-sign-in-alt"></i></button>
 
                 </form>
             </div>
@@ -76,40 +77,60 @@
 
             if (value1 == "") {
 
-                text = "&#xf057; Name cannot be empty.";
+                text = " Name cannot be empty.";
                 flag = false;
-                document.getElementById("username").style.borderBottom = "2px solid red";
-
+                $("#username").css("border-bottom-color", 'red');
+                $("#username,#demo1").addClass("animated shake");
+                setTimeout(function () {
+                    $("#username,#demo1").removeClass("animated shake");
+                }, 1000);
+                $("#demo1").addClass("fas fa-times").text(text);
             }
             else {
                 text = "";
-                document.getElementById("username").style.borderBottom = "2px solid white";
+                $("#demo1").removeClass("fas fa-times").text(text);
+                $("#username").css("border-bottom-color", 'white');
+                $("#demo1").text(text);
             }
-            document.getElementById("demo1").innerHTML = text;
+
 
 
             if (value2 == "") {
-                text = "&#xf057; Please Select Appropriate Field.";
+                text = " Please Select Appropriate Field.";
                 flag = false;
-                document.getElementById("role").style.borderBottom = "2px solid red";
-
+                $("#role").css("border-bottom-color", 'red');
+                $("#role,#demo2").addClass("animated shake");
+                setTimeout(function () {
+                    $("#role,#demo2").removeClass("animated shake");
+                }, 1000);
+                $("#demo2").addClass("fas fa-times").text(text);
             }
             else {
                 text = "";
-                document.getElementById("role").style.borderBottom = "2px solid white";
+                $("#demo2").removeClass("fas fa-times").text(text);
+                $("#role").css("border-bottom-color", 'white');
+                $("#demo2").text(text);
             }
-            document.getElementById("demo2").innerHTML = text;
+
+
 
             if (value3 == "") {
-                text = "&#xf057; Password cannot be empty.";
+                text = " Password cannot be empty.";
                 flag = false;
-                document.getElementById("pwd").style.borderBottom = "2px solid red";
+                $("#pwd").css("border-bottom-color", 'red');
+                $("#pwd,#demo3").addClass("animated shake");
+
+                setTimeout(function () {
+                    $("#pwd,#demo3  ").removeClass("animated shake");
+                }, 1000);
+                $("#demo3").addClass("fas fa-times").text(text);
             }
             else {
                 text = "";
-                document.getElementById("pwd").style.borderBottom = "2px solid white";
+                $("#demo3").removeClass("fas fa-times").text(text);
+                $("#pwd").css("border-bottom-color", 'white');
+                $("#demo3").text(text);
             }
-            document.getElementById("demo3").innerHTML = text;
 
             return flag;
 
