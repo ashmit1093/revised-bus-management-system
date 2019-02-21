@@ -1,218 +1,337 @@
-  *{
-  margin:0;
-  outline:none;
+* {
+  margin: 0;
+  outline: none;
 }
-body{
-  font-family: 'Font Awesome 5 Free','Quicksand', sans-serif;
+body {
+  font-family: "Font Awesome 5 Free", "Quicksand", sans-serif;
   overflow: hidden;
+
 }
-.header{
-  background-color:black; 
-  width:100%;
+.header {
+  background-color: black;
+  width: 100%;
   height: 60px;
   overflow: hidden;
   border-top: 3px solid red;
 }
 
-.header h3{
-  color:white;
+.header h3 {
+  color: white;
   position: relative;
-  top:5px;
-  left:40px;  
-  display:inline;
+  padding: 30px;
+  display: inline;
 }
 
-.fa-bus
-{
+.fa-bus {
   color: red;
-  position: relative; 
-  top:10px;
-  left:30px;
+  position: relative;
+  top: 10px;
+  left: 30px;
 }
 
-
-.content{
-  
+.content {
   position: relative;
-  background:#222;
-  background-size:cover; 
+  background: #222;
+  background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  height: 86vh;
+  height: 690px;
+  width: 100%;
   overflow: hidden;
   opacity: 1;
- 
-  
 }
 
-
-.signup-box{
-
+.signup-box {
   width: 380px;
   height: 520px;
-  background:black ;
+  background: black;
   position: absolute;
-  top:14%;
-  left:35%;
+  top: 14%;
+  left: 35%;
   text-align: center;
   opacity: 0.9;
-  border-radius:15px 50px 30px;         
+  border-radius: 15px 50px 30px;
   box-shadow: 0px 0px 1px black;
   box-sizing: border-box;
   padding: 20px;
-   
 }
-.signup-box h4{
+.signup-box h4 {
   position: relative;
-  top:135px;
-  right:130px; 
+  top: 135px;
+  right: 130px;
   color: #fff;
   font-size: 18px;
   padding-left: 35px;
   padding-bottom: 15px;
-  
-
-
+  display: block;
 }
-.signup-box input{
-
+.signup-box input {
   position: relative;
-  top:125px;
-  left:0px; 
+  top: 125px;
+  left: 0px;
   color: #fff;
   border: none;
   background: transparent;
   border-bottom: 2px solid whitesmoke;
   width: 90%;
   text-decoration: none;
-  font-size:15px; 
+  font-size: 15px;
   font-weight: bold;
-  font-family: 'Font Awesome 5 Free','Quicksand', sans-serif;
-  padding-bottom:6px; 
-  
-
+  font-family: "Font Awesome 5 Free", "Quicksand", sans-serif;
+  padding-bottom: 6px;
 }
 
-.signup-box input:focus{
-    
+.signup-box input:focus {
   border-bottom: 2px solid red;
-  transform: translate(0px,-1px);
-  font-family: 'Font Awesome 5 Free','Quicksand', sans-serif;
-  caret-color:red;
-
+  transform: translate(0px, -1px);
+  font-family: "Font Awesome 5 Free", "Quicksand", sans-serif;
+  caret-color: red;
 }
 
- .signup-box select{
+.signup-box select {
   position: relative;
-  top:125px;
-  color:white;  
-  border: none; 
+  top: 125px;
+  color: white;
+  border: none;
   background: transparent;
   border-bottom: 2px solid whitesmoke;
   width: 90%;
   text-decoration: none;
-  font-size:15px; 
-  border-radius:0px;
+  font-size: 15px;
+  border-radius: 0px;
   font-weight: bold;
   -webkit-appearance: none;
-  font-family: 'Font Awesome 5 Free','Quicksand', sans-serif;
-  padding-bottom:6px; 
-  background: black; 
-
-
+  font-family: "Font Awesome 5 Free", "Quicksand", sans-serif;
+  padding-bottom: 6px;
+  background: black;
 }
 
-.signup-box select:focus{
-  border-bottom: 2px solid red; 
+.signup-box select:focus {
+  border-bottom: 2px solid red;
   color: white;
-  font-family: 'Font Awesome 5 Free','Quicksand', sans-serif;
+  font-family: "Font Awesome 5 Free", "Quicksand", sans-serif;
 }
 
-
-
-#btn{
+#btn {
   position: relative;
-  top:153px;
+  top: 153px;
   width: 91%;
   height: 30px;
-  left:3px;
+  left: 3px;
   border-radius: 15px;
   background: transparent;
   color: white;
-  border:1px solid red;
+  border: 1px solid red;
   font-size: 15px;
-  padding: 4px;  
+  padding: 4px;
   font-weight: bold;
   cursor: grab;
-  font-family: 'Quicksand', sans-serif;
+  font-family: "Quicksand", sans-serif;
   box-shadow: 0px 0px 3px red;
   cursor: pointer;
 }
 
-#btn:hover{
+#btn:hover {
   background: red;
-  color:black;
+  color: black;
   border: 1px solid black;
   font-size: 15px;
   font-weight: bold;
-  font-family: 'Font Awesome 5 Free','Quicksand', sans-serif;
+  font-family: "Font Awesome 5 Free", "Quicksand", sans-serif;
   box-shadow: 0px 0px 0px red;
- }
+}
 
-.signup-box h2{
+.signup-box h2 {
   position: relative;
   color: #fff;
   font-size: 20px;
-  top:115px;
-  font-family: 'Font Awesome 5 Free','Quicksand', sans-serif;
+  top: 115px;
+  font-family: "Font Awesome 5 Free", "Quicksand", sans-serif;
 }
 p {
-  position: relative; 
-  top:130px;
+  position: relative;
+  top: 130px;
   color: red;
   border: none;
   width: 90%;
   text-decoration: none;
-  font-size:17px; 
+  font-size: 17px;
   font-weight: bold;
-  font-family: 'Font Awesome 5 Free','Quicksand', sans-serif;
-  padding-right:80px;  
-  padding-bottom:5px;
-  padding-top:0; 
-
+  font-family: "Font Awesome 5 Free", "Quicksand", sans-serif;
+  padding-right: 80px;
+  padding-bottom: 5px;
+  padding-top: 0;
 }
-#demo1{
-  right:32px;
-  font-family: 'Font Awesome 5 Free','Quicksand', sans-serif;
-
+#demo1 {
+  right: 32px;
+  font-family: "Font Awesome 5 Free", "Quicksand", sans-serif;
 }
 
-#demo2
-{
-  right:5px;
-  font-family: 'Font Awesome 5 Free','Quicksand', sans-serif;
-
+#demo2 {
+  right: 5px;
+  font-family: "Font Awesome 5 Free", "Quicksand", sans-serif;
 }
-#demo3{
-  right:18px;
-  font-family: 'Font Awesome 5 Free','Quicksand', sans-serif;
-
+#demo3 {
+  right: 18px;
+  font-family: "Font Awesome 5 Free", "Quicksand", sans-serif;
 }
 
-.logo{
-  position: absolute; 
-  top:-15%;
+.logo {
+  position: absolute;
+  top: -15%;
   left: 70px;
   height: 100px;
   width: 100px;
-  
 }
 
-.footer{
-  background-color:black; 
-  width:100%;
-  height: 180px;
+.footer {
+  background-color: black;
+  width: 100%;
+  height: 60px;
   overflow: hidden;
   border-top: 3px solid red;
- 
+}
+
+/* Media Quaries */
+
+@media screen and (max-width: 768px) {
+  .content {
+    height: 86vh;
+  }
+  .signup-box {
+    left: 25%;
+    height: 500px;
+  }
+  .signup-box #btn{
+    top:137px;
+  }
+}
+@media screen and (max-width: 740px) {
+  .content {
+    height: 86vh;
+  }
+  .signup-box {
+    left: 25%;
+    height: 500px;
+  }
+}
+
+@media screen and (max-width: 625px) {
+  .signup-box {
+    width: 80%;
+    left: 10%;
+  }
+
+  .logo {
+    margin-left: 55px;
+  }
+
+  .signup-box h4 {
+    text-indent: -9999px;
+  }
+}
+
+@media screen and (max-width: 481px) {
+  .signup-box {
+    width: 90%;
+    left: 5%;
+  }
+
+  .logo {
+    margin-left: 20px;
+  }
+
+  .signup-box h4 {
+    text-indent: -9999px;
+  }
+}
+@media screen and (max-width: 435px) {
+  .content {
+    height: 85vh;
+  }
+  .signup-box {
+    width: 95%;
+    left: 2%;
+    height: 480px;
+  }
+
+  .logo {
+    margin-left: 5px;
+    height: 10px;
+    width: 20px;    
+  }
+
+  .signup-box p {
+    top: 95px;
+  }
+
+  .signup-box select {
+    top: 85px;
+    width: 100%;
+  }
+  .signup-box input {
+    top: 85px;
+    width: 100%;
+  }
+  .signup-box h4 {
+    text-indent: -9999px;
+  }
+  .signup-box #btn {
+    top: 110px;
+  }
+}
+@media screen and (max-width: 370px) {
+  .signup-box {
+    top: 75px;
+    width: 95%;
+    left: 3%;
+    height: 420px;
+  }
+
+  .logo {
+    margin-left: -30px;
+  }
+
+  p {
+    font-size: 14px;
+  }
+
+  .signup-box select {
+    width: 100%;
+    top: 70px;
+  }
+  .signup-box input {
+    width: 100%;
+    top: 80px;
+  }
+
+  .signup-box p {
+    top: 70px;
+  }
+  #demo3 {
+    top: 60px;
+  }
+
+  #dmeo2 {
+    top: -60px;
+  }
+  #demo1 {
+    left: -30px;
+    top: 80px;
+  }
+
+  .signup-box input[type="password"] {
+    width: 100%;
+    top: 60px;
+  }
+  .signup-box h4 {
+    text-indent: -9999px;
+  }
+
+  .signup-box #btn {
+    top: 65px;
+  }
+  .content {
+    height: 100vh;
+  }
 }

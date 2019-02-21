@@ -2,6 +2,7 @@
 <html>
 
 <head>
+    <meta name="viewport" content="width=device-width" height="device-height" >
     <title>Bus Management System : Login</title>
     <link rel="stylesheet" type="text/css" href="stylesheet.css">
     <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
@@ -22,8 +23,6 @@
 
         </div>
 
-
-
         <div class="content">
 
             <div class="signup-box">
@@ -33,15 +32,15 @@
                     <i class="far fa-user-circle fa-1x"></i>
                 </h2>
 
-                <form name="myForm" method="post" action="LogServlet" onsubmit=" return myValidation()">
+                <form name="myForm" method="post" action="Landing.html" onsubmit=" return myValidation()">
 
                     <h4>Username</h4>
                     <input type="text" name="id" placeholder='&#61447; Username' id="username">
                     <p id="demo1"></p>
 
-                    <h4 style="left:-150px">Role</h4>
-                    <select name="role" id="role" >
-                        <option value=""> &#xf0d7;  -Select-</option>
+                    <h4 style="left:-150px" class="select-option">Role</h4>
+                    <select name="role" id="role">
+                        <option value=""> &#xf0d7; -Select-</option>
                         <option value="Student">Student</option>
                         <option value="Faculty">Faculty</option>
                         <option value="Admin">Admin</option>
@@ -58,8 +57,9 @@
                 </form>
             </div>
         </div>
-    </div>
-    <div class="footer">
+
+        <div class="footer"></div>
+
     </div>
 
     <script>
@@ -73,7 +73,6 @@
             console.log('value3: ', value3);
             var text;
             var flag = true;
-
 
             if (value1 == "") {
 
@@ -94,7 +93,6 @@
             }
 
 
-
             if (value2 == "") {
                 text = " Please Select Appropriate Field.";
                 flag = false;
@@ -111,7 +109,6 @@
                 $("#role").css("border-bottom-color", 'white');
                 $("#demo2").text(text);
             }
-
 
 
             if (value3 == "") {
@@ -137,6 +134,7 @@
         }
 
     </script>
+    
 </body>
 
 </html>
