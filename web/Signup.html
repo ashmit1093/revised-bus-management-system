@@ -53,7 +53,7 @@
                     <p id="demo3"></p>
 
                     <h4 style="left:-96px">Confirm-Password</h4>
-                    <input type="password" name="pass" placeholder="&#61475; Confirm-Password" id="pwd">
+                    <input type="password" name="pass-confirm" placeholder="&#61475; Confirm-Password" id="pwd-confirm">
                     <p id="demo4"></p>
 
                     </br>
@@ -78,6 +78,8 @@
             console.log('value2: ', value2);
             var value3 = document.forms["myForm"]["pass"].value;
             console.log('value3: ', value3);
+            var value4 = document.forms["myForm"]["pass-confirm"].value;
+            
             var text;
             var flag = true;
 
@@ -135,6 +137,26 @@
                 $("#pwd").css("border-bottom-color", 'white');
                 $("#demo3").text(text);
             }
+
+
+            if (value4 !=value3) {
+                text = " Password does not match.";
+                flag = false;
+                $("#pwd-confirm").css("border-bottom-color", 'red');
+                $("#pwd-confirm,#demo4").addClass("animated shake");
+
+                setTimeout(function () {
+                    $("#pwd-confirm,#demo4  ").removeClass("animated shake");
+                }, 1000);
+                $("#demo4").addClass("fas fa-times").text(text);
+            }
+            else {
+                text = "";
+                $("#demo4").removeClass("fas fa-times").text(text);
+                $("#pwd-confirm").css("border-bottom-color", 'white');
+                $("#demo4").text(text);
+            }
+
 
             return flag;
 

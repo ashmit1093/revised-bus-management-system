@@ -154,6 +154,13 @@ a{
   top: 115px;
   font-family: "Font Awesome 5 Free", "Quicksand", sans-serif;
 }
+
+.signup-box h5{
+  color: white;
+  position: relative;
+  top:160px;
+  letter-spacing: 1px;
+}
 p {
   position: relative;
   top: 130px;
@@ -180,6 +187,10 @@ p {
 #demo3 {
   right: 18px;
   font-family: "Font Awesome 5 Free", "Quicksand", sans-serif;
+}
+#demo4{
+
+  right: 20px;
 }
 
 .logo {
@@ -212,6 +223,10 @@ p {
   }
   .signup-box #btn{
     top:137px;
+  }
+
+  .signup-box h5{
+    top:140px;
   }
 }
 @media screen and (max-width: 740px) {
@@ -287,6 +302,9 @@ p {
   .signup-box #btn {
     top: 110px;
   }
+  .signup-box h5{
+    top:115px;
+  }
 }
 @media screen and (max-width: 370px) {
   .signup-box {
@@ -341,5 +359,8 @@ p {
   }
   .content {
     height: 100vh;
+  }
+  .signup-box h5{
+    top:70px;
   }
 }
