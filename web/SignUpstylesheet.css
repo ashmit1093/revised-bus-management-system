@@ -1,54 +1,14 @@
-* {
-  margin: 0;
-  outline: none;
-}
-body {
-  font-family: "Font Awesome 5 Free", "Quicksand", sans-serif;
-  overflow: hidden;
-
+.logo2 img{
+  position: absolute;
+  top: -15%;
+  left: 100px;
+  height: 150px;
+  width: 180px;
 }
 
-a{
-  text-decoration: none;
-}
-.header {
-  background-color: black;
-  width: 100%;
-  height: 60px;
-  overflow: hidden;
-  border-top: 3px solid red;
-}
-
-.header h3 {
-  color: white;
-  position: relative;
-  padding: 30px;
-  display: inline;
-}
-
-.fa-bus {
-  color: red;
-  position: relative;
-  top: 10px;
-  left: 30px;
-}
-
-.content {
-  position: relative;
-  background: #222;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  height: 690px;
-  width: 100%;
-  overflow: hidden;
-  opacity: 1;
-}
-
-
-.signup-box {
+.signup-box2 {
   width: 380px;
-  height: 520px;
+  height: 540px;
   background: black;
   position: absolute;
   top: 14%;
@@ -60,20 +20,22 @@ a{
   box-sizing: border-box;
   padding: 20px;
 }
-.signup-box h4 {
+
+.signup-box2 h4 {
   position: relative;
-  top: 135px;
+  top: 85px;
   right: 130px;
   color: #fff;
-  font-size: 18px;
+  font-size: 17px;
   padding-left: 35px;
   padding-bottom: 15px;
   display: block;
+
 }
 
-.signup-box input {
+.signup-box2 input {
   position: relative;
-  top: 125px;
+  top: 80px;
   left: 0px;
   color: #fff;
   border: none;
@@ -87,16 +49,16 @@ a{
   padding-bottom: 6px;
 }
 
-.signup-box input:focus {
+.signup-box2 input:focus {
   border-bottom: 2px solid red;
   transform: translate(0px, -1px);
   font-family: "Font Awesome 5 Free", "Quicksand", sans-serif;
   caret-color: red;
 }
 
-.signup-box select {
+.signup-box2 select {
   position: relative;
-  top: 125px;
+  top: 80px;
   color: white;
   border: none;
   background: transparent;
@@ -112,15 +74,15 @@ a{
   background: black;
 }
 
-.signup-box select:focus {
+.signup-box2 select:focus {
   border-bottom: 2px solid red;
   color: white;
   font-family: "Font Awesome 5 Free", "Quicksand", sans-serif;
 }
 
-#btn {
+.signup-box2 #btn {
   position: relative;
-  top: 153px;
+  top: 75px;
   width: 91%;
   height: 30px;
   left: 3px;
@@ -147,109 +109,120 @@ a{
   box-shadow: 0px 0px 0px red;
 }
 
-.signup-box h2 {
+.signup-box2 h2 {
   position: relative;
   color: #fff;
   font-size: 20px;
-  top: 115px;
+  top: 65px;
   font-family: "Font Awesome 5 Free", "Quicksand", sans-serif;
 }
-p {
+.signup-box2 p {
   position: relative;
-  top: 130px;
+  top: 85px;
   color: red;
   border: none;
   width: 90%;
   text-decoration: none;
-  font-size: 17px;
+  font-size: 16px;
   font-weight: bold;
   font-family: "Font Awesome 5 Free", "Quicksand", sans-serif;
   padding-right: 80px;
   padding-bottom: 5px;
   padding-top: 0;
 }
-#demo1 {
-  right: 32px;
-  font-family: "Font Awesome 5 Free", "Quicksand", sans-serif;
+
+.signup-box2 h5{
+
+  position: relative;
+  top:90px;
+  color:white;
+  letter-spacing: 1px;
 }
 
-#demo2 {
-  right: 5px;
-  font-family: "Font Awesome 5 Free", "Quicksand", sans-serif;
+.signup-box2 h5:hover{
+
+  color: red;
+
 }
-#demo3 {
-  right: 18px;
-  font-family: "Font Awesome 5 Free", "Quicksand", sans-serif;
-}
-
-.logo {
-  position: absolute;
-  top: -15%;
-  left: 70px;
-  height: 100px;
-  width: 100px;
-}
-
-
-
-.footer {
-  background-color: black;
-  width: 100%;
-  height: 60px;
-  overflow: hidden;
-  border-top: 3px solid red;
-}
-
-/* Media Quaries */
 
 @media screen and (max-width: 768px) {
   .content {
     height: 86vh;
   }
-  .signup-box {
+  .signup-box2 {
     left: 25%;
-    height: 500px;
+    height: 514px;
   }
-  .signup-box #btn{
-    top:137px;
+  .signup-box2 #btn{
+    top:65px;
   }
+  .signup-box2 h5{
+    top:70px;
+  }
+ 
 }
 @media screen and (max-width: 740px) {
   .content {
-    height: 86vh;
+    height: 87vh;
   }
-  .signup-box {
+  .signup-box2 {
     left: 25%;
-    height: 500px;
+    height: 520px;
   }
 }
 
 @media screen and (max-width: 625px) {
-  .signup-box {
+  .signup-box2 {
     width: 80%;
     left: 10%;
   }
 
-  .logo {
+  .logo2 img {
     margin-left: 55px;
   }
 
-  .signup-box h4 {
+  .signup-box2 h4 {
     text-indent: -9999px;
+  }
+
+  .signup-box2 input{
+
+    top:40px;
+  }
+
+  .signup-box2 select{
+
+    top:40px;
+  }
+
+  .signup-box2 #btn{
+
+    top:50px;
+  }
+
+  .signup-box2 p{
+
+    top:45px;
+
+  }
+  .signup-box2 h5{
+
+    position: relative;
+    top:55px;
   }
 }
 
 @media screen and (max-width: 481px) {
-  .signup-box {
+  .signup-box2 {
     width: 90%;
     left: 5%;
   }
 
-  .logo {
+  .logo2 img {
     margin-left: 20px;
   }
 
-  .signup-box h4 {
+  .signup-box2 h4 {
     text-indent: -9999px;
   }
 }
@@ -257,7 +230,7 @@ p {
   .content {
     height: 85vh;
   }
-  .signup-box {
+  .signup-box2 {
     width: 95%;
     left: 2%;
     height: 480px;
@@ -269,77 +242,102 @@ p {
     width: 20px;    
   }
 
-  .signup-box p {
-    top: 95px;
+  .signup-box2 p {
+    top: 44px;
   }
 
-  .signup-box select {
-    top: 85px;
+  .signup-box2 select {
+    top: 40px;
     width: 100%;
   }
-  .signup-box input {
-    top: 85px;
+  .signup-box2 input {
+    top: 40px;
     width: 100%;
   }
-  .signup-box h4 {
+  .signup-box2 h4 {
     text-indent: -9999px;
   }
-  .signup-box #btn {
-    top: 110px;
+  .signup-box2 #btn {
+    top: 25px;
+  }
+  .signup-box2 h5{
+
+    position: relative;
+    top:29px;
   }
 }
 @media screen and (max-width: 370px) {
-  .signup-box {
+  .signup-box2 {
     top: 75px;
     width: 95%;
     left: 3%;
-    height: 420px;
+    height: 430px;
   }
 
-  .logo {
-    margin-left: -30px;
+  .logo2 img {
+    margin-left: -20px;
+    height: 120px;
+    width: 140px;
+  }
+
+  .signup-box2 h2{
+
+    top:45px;
   }
 
   p {
     font-size: 14px;
   }
 
-  .signup-box select {
+  .signup-box2 select {
     width: 100%;
-    top: 70px;
+    top: 10px;
   }
-  .signup-box input {
+  .signup-box2 input {
     width: 100%;
-    top: 80px;
+    top: 20px;
   }
 
-  .signup-box p {
-    top: 70px;
+  .signup-box2 #demo4{
+
+    top:-1px;
   }
-  #demo3 {
-    top: 60px;
+   .signup-box2 #demo3 { 
+    top: 5px;
+    left: -10px;
   }
 
-  #dmeo2 {
-    top: -60px;
+  .signup-box2 #demo2 {
+    top: 20px;
+    font-size: 15px;
   }
-  #demo1 {
-    left: -30px;
-    top: 80px;
+  .signup-box2 #demo1 {
+    left: -22px;
+    top: 30px;
   }
 
-  .signup-box input[type="password"] {
+  .signup-box2 input[type="password"] {
     width: 100%;
-    top: 60px;
+    top: -5px;
   }
-  .signup-box h4 {
+  .signup-box2 input[type="password"] {
+    width: 100%;
+    top: -5px;
+  }
+  .signup-box2 h4 {
     text-indent: -9999px;
   }
 
-  .signup-box #btn {
-    top: 65px;
+  .signup-box2 #btn {
+    top: -20px;
   }
   .content {
     height: 100vh;
+  }
+
+  .signup-box2 h5{
+
+    position: relative;
+    top:-18px;
   }
 }
